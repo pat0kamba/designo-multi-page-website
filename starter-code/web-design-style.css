@@ -1,0 +1,69 @@
+/* styling of the main top section */
+.web-top-section{
+    width:1111px;
+    height:252px;
+    margin: 50px auto;
+    padding:64px 191px;
+    text-align:center;
+    border-radius:10px;
+}
+.web-top-section > .content{
+    width:730px;
+}
+.web-top-section > .content > h1{
+    margin-bottom:24px;
+}
+
+/* styling of the background leaf image */
+.bg-leaf-2{
+    top:180px
+}
+
+/* middle section */
+.web-middle-section{
+    width:1111px;
+    height:988px;
+    margin:130px auto;
+    display:grid;
+    grid-template-columns:repeat(3, auto);
+    grid-gap:30px;
+}
+.express-img, .transfer-img, .photon-img, .builder-img, .blogr-img, .camp-img{
+    width:100%;
+    height:65%;
+    aspect-ratio:1/1;
+    object-fit:cover;
+    border-radius:10px 10px 0 0;
+
+}
+
+.info{
+    padding:32px;
+    text-align:center;
+    background-color:#FDF3F0;
+    border-radius:0 0 10px 10px;
+}
+.info-heading{
+    margin-bottom:16px;
+    color:#E7816B;
+}
+.info:hover, .info:focus-visible{
+    background-color:#FFAD9B;
+    color:#fff !important;
+    cursor:pointer;    
+}
+.info-heading:hover{
+    color:#fff;
+}
+
+/* Middle Bottom Section */
+.web-middle-bottom-section{
+    width:1111px;
+    height:308px;
+    margin:auto ;
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    grid-template-areas:
+    "app_design graphic_design";
+    grid-gap:30px;
+}
