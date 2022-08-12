@@ -25,10 +25,11 @@
     height:988px;
     margin:130px auto;
     display:grid;
-    grid-template-columns:repeat(3, auto);
+    grid-template-columns:repeat(3, 1fr);
     grid-gap:30px;
 }
-.express-img, .transfer-img, .photon-img, .builder-img, .blogr-img, .camp-img{
+.express-img, .transfer-img, .photon-img, .builder-img, .blogr-img, .camp-img,
+.airfilter-img, .eyecam-img, .faceit-img, .todo-img, .loopstudios-img{
     width:100%;
     height:65%;
     aspect-ratio:1/1;
@@ -57,13 +58,19 @@
 }
 
 /* Middle Bottom Section */
-.web-middle-bottom-section{
+.web-middle-bottom-section, .app-middle-bottom-section{
     width:1111px;
     height:308px;
     margin:auto ;
     display:grid;
     grid-template-columns:1fr 1fr;
+    grid-gap:30px;
+}
+.app-middle-bottom-section{
+    grid-template-areas:
+    "web_design graphic_design";
+}
+.web-middle-bottom-section{
     grid-template-areas:
     "app_design graphic_design";
-    grid-gap:30px;
 }
