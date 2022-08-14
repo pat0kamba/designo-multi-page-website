@@ -1,0 +1,99 @@
+section{
+    border-radius:10px;
+    overflow:hidden;
+}
+
+/* Styling the about top section */
+.about-top-section{
+    width:1111px;
+    height:480px;
+    margin:64px auto;
+    display:flex;
+    
+}
+.intro{
+    background-image:url('./assets/shared/desktop/bg-pattern-small-circle.svg');
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center center;
+    width:635px;
+    padding:135px 95px; 
+    
+}
+.intro >h2{
+    text-transform:lowercase;
+    margin-bottom:32px;
+}
+.about-img{
+    width:100%;
+    height:100%;
+}
+
+/* Styling the world-class and real-deal sections */
+.world-class-section, .real-deal-section{
+    border-radius:10px;
+    width:1111px;
+    height:640px;
+    margin:130px auto;
+    display:flex;
+    
+}
+.world-class-text, .real-deal-text{
+    width:637px;
+    padding:154px 96px;
+    background-color:#FDF3F0;
+    background-image:url('./assets/shared/desktop/bg-pattern-two-circles.svg');
+    background-repeat:no-repeat;
+    background-position:bottom left;
+
+}
+.world-class-talent-img{
+    width:100%;
+    height:100%;
+}
+.world-class-text > h2, .real-deal-text>h2{
+    margin-bottom:24px;
+    text-transform:lowercase;
+
+}
+
+/* styling the about location section */
+.about-location{
+    width:1111px;
+    margin:auto;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+}
+.location > p{
+    text-transform:uppercase;
+    margin:48px 0 32px;
+}
+
+.location-img{
+    position:relative
+}
+
+.bg-pattern-circle-canada, .bg-pattern-circle-australia, .bg-pattern-circle-uk{
+    position:absolute;
+    z-index:-1;
+}
+.bg-pattern-circle-australia{
+    transform:rotate(90deg);
+}
+.bg-pattern-circle-uk{
+    transform:rotate(180deg);
+}
+
+/* styling the see location button */
+.btn-loc{
+    padding:10px 16px;
+    border-radius:8px;
+    border:none;
+    background-color:#E7816B;
+    color:#fff;
+}
+.btn-loc:hover{
+    cursor:pointer;
+    background-color:#FFAD9B;
+}
