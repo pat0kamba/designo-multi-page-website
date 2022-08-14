@@ -1,0 +1,67 @@
+/* styling of the middle section */
+.location-middle-section{
+    width:1111px;
+    margin:64px auto;
+    display:grid;
+    grid-template-areas:
+    "canada canada canada canada_map"
+    "australia_map australia australia australia"
+    "uk uk uk uk_map";
+    grid-template-columns:repeat(4, 1fr);
+    grid-template-rows:repeat(3, 326px);
+    grid-gap:32px;
+}
+.canada{
+    grid-area:canada;
+    background-image:url('./assets/shared/desktop/bg-pattern-two-circles.svg'); 
+}
+.canada-map{
+    grid-area:canada_map;
+    background-image:url('./assets/locations/desktop/image-map-canada.png');
+}
+
+.australia{
+    grid-area:australia;
+    background-image:url('./assets/shared/desktop/bg-pattern-two-circles.svg'); 
+}
+
+.australia-map{
+    grid-area:australia_map;
+    background-image:url('./assets/locations/desktop/image-map-australia.png');
+}
+
+.uk{
+    grid-area:uk;
+    background-image:url('./assets/shared/desktop/bg-pattern-two-circles.svg');
+}
+
+.uk-map{
+    grid-area:uk_map;
+    background-image:url('./assets/locations/desktop/image-map-united-kingdom.png');
+}
+.canada, .australia, .uk{
+    background-repeat:no-repeat;
+    background-position:center center;
+    padding:88px 95px;
+    border-radius:10px;
+    background-color:#FDF3F0;
+}
+.canada-map, .australia-map, .uk-map{
+    width:350px;
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    border-radius:10px;
+}
+.canada-map:hover, .canada-map:focus-visible, .australia-map:hover, .australia-map:focus-visible,
+.uk-map:hover, .uk-map:focus-visible{
+    cursor:pointer;
+}
+.canada >h2, .uk>h2, .australia>h2{
+    text-transform:capitalize;
+    margin-bottom:24px;
+}
+
+.canada-text h3, .australia-text h3, .uk h3{
+    text-transform:lowercase;
+}
