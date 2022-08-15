@@ -3,46 +3,114 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+  <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./aboutstyle.css">
+  <link rel="stylesheet" href="./contactstyle.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
-  
   <title>Frontend Mentor | Designo Agency Website Challenge</title>
 </head>
 <body>
-  Our Company
-  Locations
-  Contact
+  <!-- Navigation bar -->
+  <header>
+    <nav class="navbar flex">
+      <div class="logo">
+        <img alt="logo" class="logo-img" src="./assets/shared/desktop/logo-dark.png" />
+      </div>
+      <div class="links flex">
+        <a href="#" class="navlink" aria-label="click to ckeck more about the company">Our Company</a>
+        <a href="#" class="navlink" aria-label="click to check the location">Locations</a>
+        <a href="#" class="navlink" aria-label="click for more contacts">Contact</a>
+      </div>
+    </nav>
+    </header>
 
-  Contact us
-  Ready to take it to the next level? Let’s talk about your project or idea and find out how 
-  we can help your business grow. If you are looking for unique digital experiences that’s 
-  relatable to your users, drop us a line.
+    <main>
+      <!-- contact form section -->
+      <section class="contact-form bg-peach">
+        <div class="contact-text">
+          <h1>Contact Us</h1>
+          <p> Ready to take it to the next level? Let’s talk about your project or idea and find out how 
+            we can help your business grow. If you are looking for unique digital experiences that’s 
+            relatable to your users, drop us a line.</p>
+        </div>
+        <div class="form">
+          <form autocomplete="off" id="form">
+          <input type="text" placeholder="Name" class="form-name" aria-label="type your full-name here" autocomplete="off" required/><br/>
+          <input type="text" placeholder="Email address" class="form-email" aria-label="Type your email address here" autocomplete="off" required/><br/>
+          <input type="text" placeholder="Phone" class="form-phone" aria-label="Type your phone number here" autocomplete="off"/><br/>
+          <textarea class="form-message" placeholder="Your message" rows="5" aria-label="Type your message Here" autocomplete="off"></textarea><br/>
+          <button type="submit" class="btn-form">Submit</button>
+          </form>
 
-  Name
-  Email address
-  Phone
-  Your message
-  Submit
+        </div>
+      </section>
+   <!-- About locations -->
+   <section class="about-location ab-location">
+    <div class="location center">
+      <div class="location-img">
+      <img src="./assets/home/desktop/bg-pattern-hero-home.svg" alt="bg-pattern-circle" class="bg-pattern-circle-canada"/>
+      <img src="./assets/shared/desktop/illustration-canada.svg" alt="img-location-canada" aria-label="image-location-canada" class="img-location-canada">
+      </div>
+      <p>Canada</p>
+      <button class="btn-loc">See location</button>
+    </div>
+    <div class="location center">
+      <div class="location-img">
+        <img src="./assets/home/desktop/bg-pattern-hero-home.svg" alt="bg-pattern-circle" class="bg-pattern-circle-australia"/>
+      <img src="./assets/shared/desktop/illustration-australia.svg" alt="img-location-australia" aria-label="image-location-australia" class="img-location-australia">
+      </div>
+      <p>Australia</p>
+      <button class="btn-loc">See location</button>
+    </div>
+    <div class="location center">
+      <div class="location-img">
+        <img src="./assets/home/desktop/bg-pattern-hero-home.svg" alt="bg-pattern-circle" class="bg-pattern-circle-uk"/>
+      <img src="./assets/shared/desktop/illustration-united-kingdom.svg" alt="img-location-UK" aria-label="img-location-United Kingdom" class="img-location-UK">
+      </div>
+      <p>United Kingdom</p>
+      <button class="btn-loc">See location</button>
+    </div>
+  </section>
 
-  Canada
-  See location
-
-  Australia
-  See location
-
-  United Kingdom
-  See location
-
-  Our company
-  Locations
-  Contact
-
-  Designo Central Office
-  3886 Wellington Street
-  Toronto, Ontario M9C 3J5
-
-  Contact Us (Central Office)
-  P : +1 253-863-8967
-  M : contact@designo.co
+    </main>
+   <!-- Footer section -->
+   <footer>
+    <div class="contact bg-black">
+      <div class="footer-container">
+        <div class="navbar nav-bottom flex">
+          <div class="logo">
+            <img alt="logo" class="logo-img" src="./assets/shared/desktop/logo-light.png" />
+          </div>
+          <div class="links flex ">
+            <a href="#" class="bottomlink" aria-label="click to ckeck more about the company">Our Company</a>
+            <a href="#" class="bottomlink" aria-label="click to check the location">Locations</a>
+            <a href="#" class="bottomlink" aria-label="click for more contacts">Contact</a>
+          </div>
+        </div>
+        <hr />
+        <div class="contact_details flex">
+          <div class="address clr-light_grey">
+            <p>Designo Central Office</p>
+            <p>3886 Wellington Street</p>
+            <p>Toronto, Ontario M9C 3J5</p>
+          </div>
+          <div class="contact_info clr-light_grey">
+            <p>Contact Us (Central Office)</p>
+            <p>P : +1 253-863-8967</p>
+            <p>M : contact@designo.co</p>
+          </div>
+          <div class="social_media flex">
+            <a href="#" class="social_links"><img src="./assets/shared/desktop/icon-facebook.svg" alt="facebook-logo" class="clr-peach" aria-label="click on facebook-logo"/></a>
+            <a href="#" class="social_links"><img src="./assets/shared/desktop/icon-youtube.svg" alt="youtube-logo" class="clr-peach" aria-label="click on Youtube-logo"/></a>
+            <a href="#" class="social_links"><img src="./assets/shared/desktop/icon-twitter.svg" alt="twitter-logo" class="clr-peach" aria-label="click on twitter-logo"/></a>
+            <a href="#" class="social_links"><img src="./assets/shared/desktop/icon-pinterest.svg" alt="pinterest-logo" class="clr-peach" aria-label="click on pinterest-logo"/></a>
+            <a href="#" class="social_links"><img src="./assets/shared/desktop/icon-instagram.svg" alt="instagram-logo" class="clr-peach" aria-label="click on instagram-logo"/></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </footer>  
+  <img src="./assets/shared/desktop/bg-pattern-leaf.svg" alt="bg-pattern-leaf" class="bg-leaf-1" />
+  <!-- <img src="./assets/shared/desktop/bg-pattern-leaf.svg" alt="bg-pattern-leaf-2" class="bg-leaf-2" /> -->
 </body>
 </html>
