@@ -1,6 +1,6 @@
 /* styling of the middle section */
 .location-middle-section{
-    width:1111px;
+    max-width:1111px;
     margin:64px auto;
     display:grid;
     grid-template-areas:
@@ -28,6 +28,7 @@
 .australia-map{
     grid-area:australia_map;
     background-image:url('./assets/locations/desktop/image-map-australia.png');
+
 }
 
 .uk{
@@ -47,7 +48,7 @@
     background-color:#FDF3F0;
 }
 .canada-map, .australia-map, .uk-map{
-    width:350px;
+    min-width:350px;
     background-repeat:no-repeat;
     background-size:cover;
     background-position:center;
@@ -64,4 +65,25 @@
 
 .canada-text h3, .australia-text h3, .uk h3{
     text-transform:lowercase;
+}
+
+@media screen and (max-width:821px)
+{
+    .location-middle-section{
+        grid-template-columns: 1fr;
+        grid-template-rows:repeat(6, 400px);
+        grid-template-areas:
+        "canada_map"
+        "canada"
+        "australia_map"
+        "australia"
+        "uk_map"
+        "uk";
+    }
+    .canada, .australia, .uk{
+        display:grid;
+        place-content:left;
+    }
+   
+   
 }

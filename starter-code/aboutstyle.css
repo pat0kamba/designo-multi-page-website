@@ -5,8 +5,8 @@ section{
 
 /* Styling the about top section */
 .about-top-section{
-    width:1111px;
-    height:480px;
+    max-width:1111px;
+    min-height:480px;
     margin:64px auto;
     display:flex;
     
@@ -16,7 +16,7 @@ section{
     background-repeat:no-repeat;
     background-size:contain;
     background-position:center center;
-    width:635px;
+    min-width:635px;
     padding:135px 95px; 
     
 }
@@ -29,17 +29,18 @@ section{
     height:100%;
 }
 
+
 /* Styling the world-class and real-deal sections */
 .world-class-section, .real-deal-section{
     border-radius:10px;
-    width:1111px;
-    height:640px;
+    max-width:1111px;
+    min-height:640px;
     margin:130px auto;
     display:flex;
     
 }
 .world-class-text, .real-deal-text{
-    width:637px;
+    min-width:637px;
     padding:154px 96px;
     background-color:#FDF3F0;
     background-image:url('./assets/shared/desktop/bg-pattern-two-circles.svg');
@@ -47,7 +48,7 @@ section{
     background-position:bottom left;
 
 }
-.world-class-talent-img{
+.world-class-talent-img,.real-deal-img{
     width:100%;
     height:100%;
 }
@@ -56,10 +57,10 @@ section{
     text-transform:lowercase;
 
 }
-
+ 
 /* styling the about location section */
 .about-location{
-    width:1111px;
+    max-width:1111px;
     margin:auto;
     display:flex;
     justify-content:space-around;
@@ -96,4 +97,26 @@ section{
 .btn-loc:hover{
     cursor:pointer;
     background-color:#FFAD9B;
+}
+
+/* Responsiveness */
+/* Tablet */
+
+@media only screen and (max-width:821px)
+{
+    .about-top-section,.real-deal-section{
+        flex-direction:column-reverse;
+        justify-content:space-evenly;
+    }
+    .world-class-section, .about-location{
+        flex-direction:column;
+    }
+    .world-class-talent-img,.real-deal-img, .about-img{
+        aspect-ratio:1.4;
+        flex-grow:1;
+    }
+    .world-class-text, .real-deal-text{
+      flex-grow:1;
+    }
+   
 }

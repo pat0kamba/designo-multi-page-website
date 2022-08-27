@@ -8,7 +8,8 @@
 body, h1, h2, h3, p{
     padding:0;
     margin:0;
-    
+    position:relative;
+    min-height:100%;
 }
 img, picture{
     max-width:100%;
@@ -57,7 +58,6 @@ font-family:'Jost', sans-serif;
 font-weight:400;
 font-size:16px;
 line-height:26px;
-min-height:100vh;
 position:relative;
 }
 
@@ -131,8 +131,8 @@ position:relative;
 
 /* Navbar styling */
 .navbar{
-    width:1111px;
-    height:24px;
+    max-width:1111px;
+    min-height:24px;
     margin:30px auto 0;
 }
 .links{
@@ -152,46 +152,56 @@ position:relative;
     text-decoration:underline;
 }
 /* top section */
+/* Need to change the display to flex */
 .top-section{
-    width:1111px;
-    height:640px;
+    max-width:1111px;
     margin: 50px auto;
-    padding:145px 75px;
-    position:relative;
-    overflow:hidden;
+    padding:5px 50px;
     border:none;
     border-radius:10px;
+    overflow:hidden;
 }
 .award{
-    width:540px;
-    height:350px;
+    min-width:540px;
+    min-height:640px;
+    display:grid;
+    grid-template-columns:repeat(4, 1fr);
+    place-items:center;
     
 }
 .award-text{
-    padding:40px 0;
+    margin:40px 0;
 }
-.bg-pattern{
-    position:absolute;
-    top:0;
-    right:0;
+.award-text-area
+{
+    grid-column:1/3;
 }
-.hero-phone-img{
-    position:absolute;
-    top:-20px;
+.award-phone-area{
+    grid-column:3/5;
+    background-image:url('./assets/home/desktop/bg-pattern-hero-home.svg');
+    background-repeat:no-repeat;
+    background-position:center center;
+    background-size:contain;
+    position:relative;
+}
+.phone-section{
+    position:relative;
     right:0;
+    bottom:-200px;
 }
 
 /* middle section */
 
 .middle-section{
-    width:1111px;
-    height:640px;
+    max-width:1111px;
+    min-height:640px;
     margin:160px auto;
     display:grid;
     grid-template-areas:
     "web_design app_design"
     "web_design  graphic_design";
     grid-gap:30px;
+    position:relative
 }
 
 .web_design{
@@ -240,7 +250,7 @@ position:relative;
 /* categories section */
 
 .category{
-    width:1111px;
+    max-width:1111px;
     height:412px;
     margin:auto;
     text-align:center;
@@ -274,8 +284,8 @@ position:relative;
 /* footer */
 
 .get_in_touch{
-    width:1111px;
-    height:292px;
+    max-width:1111px;
+    min-height:292px;
     margin:50px auto;
     padding:95px;
     background-image:url('./assets/shared/desktop/bg-pattern-call-to-action.svg');
@@ -304,7 +314,7 @@ position:relative;
     padding:144px 0 72px;
 }
 .footer-container{
-    width:1111px;
+    max-width:1111px;
     margin:auto;
 }
 .social_media{
@@ -335,4 +345,71 @@ position:relative;
     left:0;
     top:475px;
     z-index:-100;
+}
+
+/* Responsiveness */
+/* Tablet */
+@media only screen and (max-width:821px)
+{
+    .navbar, .top-section, .middle-section, .category, .get_in_touch{
+        margin:25px 20px;
+    }
+    .top-section{
+        text-align:center;
+        display:flex;
+        padding:100px 50px;
+    }
+    .award{
+        grid-template-columns:1fr;
+        grid-template-rows:1fr;
+        place-items:space-between;
+    }
+    .award-text-area{
+        grid-column:1/1;
+        padding:40px
+    }
+    .award-phone-area{
+        grid-column:1/1;
+    }
+  
+    .hero-phone-img{
+        top:10px;
+        white-space:normal; 
+    }
+
+    .bg-pattern{
+        top:25%;
+        right:10%;
+    }
+
+    .middle-section{
+        grid-template-columns:1fr;
+        grid-template-areas:
+        "web_design"
+        "app_design"
+        "graphic_design";
+        white-space:nowrap;
+
+    }
+
+    .category{
+        flex-direction:column;
+        text-align:left;
+    }
+    .passionate, .resourceful, .friendly{
+        flex-direction:row;
+    }
+
+    .get_in_touch{
+        flex-direction:column;
+        text-align:center;
+        padding:50px;
+    }
+    .bg-leaf-1, .bg-leaf-2{
+        display:none;
+    }
+    footer{
+        position:relative;
+        bottom:0;
+    }
 }

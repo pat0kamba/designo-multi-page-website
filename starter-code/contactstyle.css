@@ -6,8 +6,8 @@
 }
 .contact-form{
     display:flex;
-    width:1111px;
-    height:480px;
+    max-width:1111px;
+    min-height:480px;
     margin:60px auto 130px;
     align-items:center;
     padding: 95px;
@@ -62,4 +62,16 @@ input:focus::placeholder, input:focus::placeholder{
     color:#fff;
     background-color:#FFAD9B;
     cursor:pointer;
+}
+@media screen and (max-width:821px)
+{
+    .contact-form{
+        flex-direction:column;
+    }
+    .form{
+        margin-top:50px;
+    }
+    .form-name, .form-email, .form-phone, .form-message{
+        background-color:transparent;
+    }
 }
