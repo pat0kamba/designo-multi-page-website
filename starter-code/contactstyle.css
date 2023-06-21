@@ -63,7 +63,7 @@ input:focus::placeholder, input:focus::placeholder{
     background-color:#FFAD9B;
     cursor:pointer;
 }
-@media screen and (max-width:821px)
+@media screen and (max-width:912px)
 {
     .contact-form{
         flex-direction:column;
@@ -73,5 +73,24 @@ input:focus::placeholder, input:focus::placeholder{
     }
     .form-name, .form-email, .form-phone, .form-message{
         background-color:transparent;
+    }
+    main{
+        padding:30px;
+    }
+}
+@media only screen and (max-width:767px){
+    .contact-form{
+        padding:20px;
+        text-align:center;
+        align-self:center;
+    }
+    .contact-text h1{
+        font-size:2em;
+    }
+    .location{
+        margin-bottom:50px;
+    }
+    .form{
+        text-align:center;
     }
 }

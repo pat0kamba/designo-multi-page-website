@@ -3,11 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="./locationstyle.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
   <title>Frontend Mentor | Designo Agency Website Challenge</title>
-</head>
+</head> 
 <body>
  <!-- Navigation bar -->
  <header>
@@ -15,11 +17,15 @@
     <div class="logo">
       <a href="/starter-code/index.html" class="logo-link"><img alt="logo" class="logo-img" src="./assets/shared/desktop/logo-dark.png" /></a>
     </div>
-    <div class="links flex">
+    <div class="links flex navlinks">
       <a href="/starter-code/about.html" class="navlink" aria-label="click to ckeck more about the company">Our Company</a>
       <a href="/starter-code/locations.html" class="navlink" aria-label="click to check the location">Locations</a>
       <a href="/starter-code/contact.html" class="navlink" aria-label="click for more contacts">Contact</a>
     </div>
+    <div class="menu ">
+        <span class="material-icons menu-btn">menu</span>
+        <span class="material-icons close-btn">close</span>
+      </div>
   </nav>
   </header>
   
@@ -27,6 +33,7 @@
   <main>
     <section class="location-middle-section">
       <div class="canada">
+        <div class="country-text">
         <h2 class="clr-peach">Canada</h2>
         <div class="canada-text flex"> 
           <div>
@@ -40,7 +47,7 @@
             <p>M : contact@designo.co</p>
           </div>
         </div>
-
+      </div>
       </div>
       <div class="canada-map">
 
@@ -49,6 +56,7 @@
 
       </div>
       <div class="australia">
+        <div class="country-text">
         <h2 class="clr-peach">Australia</h2>
         <div class="australia-text flex"> 
           <div>
@@ -61,10 +69,13 @@
             <p>P : (02) 6720 9092</p>
             <p>M : contact@designo.au</p>
           </div>
+        <!-- </div> -->
         </div> 
 
       </div>
+    </div>
       <div class="uk">
+        <div class="country-text">
         <h2 class="clr-peach">United Kingdom</h2>
         <div class="uk-text flex"> 
           <div>
@@ -78,11 +89,12 @@
             <p>M : contact@designo.uk</p>
           </div>
         </div>
+        </div>
+      
+    </div>
+    <div class="uk-map">
 
-      </div>
-      <div class="uk-map">
-
-      </div>
+    </div>
     </section>
 
   </main>
@@ -94,7 +106,7 @@
         <h2>Let’s talk about your project</h2>
         <p>Ready to take it to the next level? Contact us today and find out how our expertise can help your business grow.</p>
       </div>
-      <button class="btn btn-dark">GET IN TOUCH</button>
+      <button class="btn btn-dark get_in_touch_btn"><a href="/contact">GET IN TOUCH</a></button>
     </div>
     <div class="contact bg-black">
       <div class="footer-container">
@@ -131,5 +143,6 @@
       </div>
     </div>
   </footer>  
+  <script type="text/javascript" src="./app.js"></script>
 </body>
 </html>

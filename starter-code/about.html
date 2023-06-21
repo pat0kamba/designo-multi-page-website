@@ -3,6 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
   <link rel="stylesheet" href="./aboutstyle.css">
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
@@ -16,24 +18,30 @@
       <div class="logo">
         <a href="/starter-code/index.html" class="logo-link"><img alt="logo" class="logo-img" src="./assets/shared/desktop/logo-dark.png" /></a>
       </div>
-      <div class="links flex">
+      <div class="links flex navlinks">
         <a href="/starter-code/about.html" class="navlink" aria-label="click to ckeck more about the company">Our Company</a>
         <a href="/starter-code/locations.html" class="navlink" aria-label="click to check the location">Locations</a>
         <a href="/starter-code/contact.html" class="navlink" aria-label="click for more contacts">Contact</a>
       </div>
+      <div class="menu">
+        <span class="material-icons menu-btn">menu</span>
+        <span class="material-icons close-btn">close</span>
+      </div>
     </nav>
     </header>
-    
+     
     <!-- Main -->
     <main>
       <!-- about intro section -->
       <section class="about-top-section">
         <div class="intro bg-peach clr-white">
+          <div class="intro-text">
          <h2>About us</h2> 
           <p>Founded in 2010, we are a creative agency that produces lasting results for our clients. 
           We’ve partnered with many startups, corporations, and nonprofits alike to craft designs 
           that make real impact. We’re always looking forward to creating brands, products, and 
           digital experiences that connect with our clients' audiences.</p>
+        </div>
         </div>
         <div class="intro-img">
         <img src="./assets/about/desktop/image-about-hero.jpg" alt="about-hero-img" aria-label="about hero image" class="about-img" />
@@ -46,6 +54,7 @@
           <img src="./assets/about/desktop/image-world-class-talent.jpg" alt="world-class-talent-image" aria-label=" world class talent image" class="world-class-talent-img" />
         </div>
         <div class="world-class-text">
+          <div class="world-class-text-child">
           <h2 class="clr-peach">World-class talent</h2>
           <p>We are a crew of strategists, problem-solvers, and technologists. Every design is thoughtfully 
             crafted from concept to launch, ensuring success in its given market. We are constantly updating 
@@ -55,6 +64,7 @@
             are just as important. We give great importance to craftsmanship, service, and prompt delivery. 
             Clients have always been impressed with our high-quality outcomes that encapsulates their 
             brand’s story and mission.</p>
+          </div>
         </div>
       </section>
 
@@ -89,6 +99,7 @@
       <!-- real-deal-section -->
       <section class="real-deal-section">
         <div class="real-deal-text">
+          <div class="real-deal-text-child">
           <h2 class="clr-peach">The real deal</h2>
           <p>As strategic partners in our clients’ businesses, we are ready to take on any challenge as our own.
             Solving real problems require empathy and collaboration, and we strive to bring a fresh perspective to every
@@ -96,6 +107,7 @@
             <br/>
             <p>We are visual storytellers in appealing and captivating ways. By combining business and marketing strategies, 
               we inspire audiences to take action and drive real results.</p>
+          </div>
         </div>
         <div class="real-deal-img">
           <img src="./assets/about/desktop/image-real-deal.jpg" alt="real-deal-img" aria-label="real-deal-image" class="real-deal-img" />
@@ -110,7 +122,7 @@
       <h2>Let’s talk about your project</h2>
       <p>Ready to take it to the next level? Contact us today and find out how our expertise can help your business grow.</p>
     </div>
-    <button class="btn btn-dark">GET IN TOUCH</button>
+    <button class="btn btn-dark get_in_touch_btn"><a href="/starter-code/contact.html">GET IN TOUCH</a></button>
   </div>
   <div class="contact bg-black">
     <div class="footer-container">
@@ -149,5 +161,6 @@
 </footer>  
 <img src="./assets/shared/desktop/bg-pattern-leaf.svg" alt="bg-pattern-leaf" class="bg-leaf-1" />
 <img src="./assets/shared/desktop/bg-pattern-leaf.svg" alt="bg-pattern-leaf-2" class="bg-leaf-2" />
+<script type="text/javascript" src="./app.js"></script>
 </body>
 </html>

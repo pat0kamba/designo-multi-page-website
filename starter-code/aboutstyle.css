@@ -8,21 +8,24 @@ section{
     max-width:1111px;
     min-height:480px;
     margin:64px auto;
-    display:flex;
-    
+    display:grid;
+    grid-template-columns:1fr 1fr; 
 }
 .intro{
     background-image:url('./assets/shared/desktop/bg-pattern-small-circle.svg');
     background-repeat:no-repeat;
     background-size:contain;
     background-position:center center;
-    min-width:635px;
-    padding:135px 95px; 
+    min-width:auto;
     
 }
-.intro >h2{
-    text-transform:lowercase;
-    margin-bottom:32px;
+.intro-text
+{
+    margin:135px 95px;
+}
+.intro-text >h2{
+    text-transform:capitalize;
+    margin-bottom:32px; 
 }
 .about-img{
     width:100%;
@@ -36,25 +39,29 @@ section{
     max-width:1111px;
     min-height:640px;
     margin:130px auto;
-    display:flex;
+    display:grid;
+    grid-template-columns:1fr 1fr;
     
 }
 .world-class-text, .real-deal-text{
-    min-width:637px;
-    padding:154px 96px;
+    min-width:auto;
     background-color:#FDF3F0;
     background-image:url('./assets/shared/desktop/bg-pattern-two-circles.svg');
     background-repeat:no-repeat;
     background-position:bottom left;
 
 }
+.world-class-text-child, .real-deal-text-child
+{
+     padding:154px 96px; 
+}
 .world-class-talent-img,.real-deal-img{
     width:100%;
     height:100%;
 }
-.world-class-text > h2, .real-deal-text>h2{
+.world-class-text-child > h2, .real-deal-text-child > h2{
     margin-bottom:24px;
-    text-transform:lowercase;
+    text-transform:capitalize;
 
 }
  
@@ -102,21 +109,39 @@ section{
 /* Responsiveness */
 /* Tablet */
 
-@media only screen and (max-width:821px)
+@media only screen and (max-width:912px)
 {
     .about-top-section,.real-deal-section{
+        display:flex;
         flex-direction:column-reverse;
         justify-content:space-evenly;
+        
     }
     .world-class-section, .about-location{
+        display:flex;
         flex-direction:column;
     }
     .world-class-talent-img,.real-deal-img, .about-img{
-        aspect-ratio:1.4;
+        aspect-ratio:2;
         flex-grow:1;
     }
     .world-class-text, .real-deal-text{
       flex-grow:1;
     }
+    .world-class-text-child, .real-deal-text-child{
+        padding:50px;
+        text-align:center;
+    }
+    .intro-text{
+        margin:50px;
+        text-align:center;
+    }
    
+}
+
+@media only screen and (max-width:767px)
+{
+    .intro{
+        width:auto;
+    }
 }

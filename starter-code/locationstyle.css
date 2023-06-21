@@ -10,7 +10,7 @@
     grid-template-columns:repeat(4, 1fr);
     grid-template-rows:repeat(3, 326px);
     grid-gap:32px;
-}
+} 
 .canada{
     grid-area:canada;
     background-image:url('./assets/shared/desktop/bg-pattern-two-circles.svg'); 
@@ -43,22 +43,24 @@
 .canada, .australia, .uk{
     background-repeat:no-repeat;
     background-position:center center;
-    padding:88px 95px;
+    background-size:cover;
     border-radius:10px;
     background-color:#FDF3F0;
+    padding:88px 95px;
 }
 .canada-map, .australia-map, .uk-map{
     min-width:350px;
     background-repeat:no-repeat;
     background-size:cover;
-    background-position:center;
+    background-position:center center;
     border-radius:10px;
 }
+
 .canada-map:hover, .canada-map:focus-visible, .australia-map:hover, .australia-map:focus-visible,
 .uk-map:hover, .uk-map:focus-visible{
     cursor:pointer;
 }
-.canada >h2, .uk>h2, .australia>h2{
+.country-text >h2{
     text-transform:capitalize;
     margin-bottom:24px;
 }
@@ -67,7 +69,7 @@
     text-transform:lowercase;
 }
 
-@media screen and (max-width:821px)
+@media only screen and (max-width:912px)
 {
     .location-middle-section{
         grid-template-columns: 1fr;
@@ -80,10 +82,58 @@
         "uk_map"
         "uk";
     }
-    .canada, .australia, .uk{
-        display:grid;
-        place-content:left;
+   
+    main{
+        padding:30px 30px 0;
+    }
+    .country-text{
+        
+        padding:20px;
+        
+        
+    }
+    .country-text > h2{
+        margin-bottom:30px;
     }
    
-   
+}
+@media only screen and (max-width:767px)
+{
+    .canada-text, .australia-text, .uk-text{
+        flex-direction:column;
+        gap:30px;
+    }
+
+    .canada-text h3, .australia-text h3, .uk-text h3{
+        font-size:1.0em;
+        letter-spacing:1px;
+        font-weight:bold;
+        text-transform:capitalize;
+    }
+    .country-text h2{
+        font-size:1.5em;
+    }
+    .canada, .australia, .uk{
+        padding:40px 0;
+        text-align:center;
+        place-content:center;
+        align-self:center;
+    }
+    .location-middle-section{
+        grid-gap:0;
+        grid-template-rows:repeat(6, 330px);
+    }
+    .canada, .australia, .uk{
+        border-radius:0;
+        margin-bottom:50px;
+    }
+    .canada-map, .australia-map, .uk-map{
+        margin-top:30px;
+        border-radius:0;
+    }
+
+    main{
+        padding:0;
+    }
+
 }

@@ -15,6 +15,14 @@ img, picture{
     max-width:100%;
     display:block;
 }
+.get_in_touch_btn a{
+  text-decoration:none;
+  color:var(--black);
+  font-weight:bold;
+}
+.get_in_touch_btn:hover a{
+  color:var(--white);
+}
 
 /* Defining global variables */
 :root{
@@ -59,6 +67,14 @@ font-weight:400;
 font-size:16px;
 line-height:26px;
 position:relative;
+}
+.hr1{
+    display:none;
+}
+/* Avoid text overflows */
+p, h1, h2, h3, h4, h5, h6
+{
+    overflow-wrap: break-word;
 }
 
 /* Defining utility color classes */
@@ -346,10 +362,13 @@ position:relative;
     top:475px;
     z-index:-100;
 }
+.Menu-box{
+    display:none;
+}
 
 /* Responsiveness */
 /* Tablet */
-@media only screen and (max-width:821px)
+@media only screen and (max-width:912px)
 {
     .navbar, .top-section, .middle-section, .category, .get_in_touch{
         margin:25px 20px;
@@ -412,4 +431,98 @@ position:relative;
         position:relative;
         bottom:0;
     }
+    .Menu-box{
+        display:block;
+    }
+    
+}
+
+@media only screen and (max-width:767px)
+{
+    .navbar, .top-section, .middle-section, .category, .get_in_touch{
+        margin:auto;
+    }
+    .award{
+        grid-template-columns:auto;
+    }
+    .top-section{
+        place-content:center;
+    }
+    
+    .award-text-area, .message{
+        width:80%;
+    }
+
+    .award-text-area h1{
+        font-size:2em;
+    }
+
+    .middle-section{
+        margin:50px 20px;
+    }
+     .category, .links{
+        flex-direction:column;
+        height:auto;
+    }
+     .passionate, .resourceful, .friendly{
+        flex-direction:column;
+        justify-content:center;
+        align-items:center;
+        text-align:center;
+        width:80%;
+        gap:50px;
+    }
+    .passionate h3, .resourceful h3, .friendly h3{
+        margin-bottom:50px;
+    }
+    .navbar{
+        flex-direction:column;
+        width:100%;
+    }
+    .contact_details{
+        flex-direction:column;
+        align-items:center;
+        text-align: center;
+        gap:50px;
+    }
+    .hr2{
+        display:none;
+    }
+    .logo-bottom{
+        margin-bottom:30px;
+    }
+    .navlinks{
+        display:none;
+        position:fixed;
+        padding:50px 30px;
+        align-items:flex-start;
+        width:100%;
+        background-color:var(--black);
+        opacity:0.7;
+    }
+    .navlinks a{
+        color:var(--white);
+    }
+    .logo{
+        padding:30px;
+        width:100%;
+    }
+    .menu span{
+        font-size:2em;
+    }
+    .close-btn{
+        display:none;
+    }
+    .menu{
+        position:absolute;
+        right:30px;
+        top:25px;
+    }
+   
+    /* .navbar{
+        align-items:flex-start;
+    } */
+
+    
+
 }

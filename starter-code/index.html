@@ -16,11 +16,15 @@
     <div class="logo">
       <a href="/starter-code/index.html" class="logo-link"><img alt="logo" class="logo-img" src="./assets/shared/desktop/logo-dark.png" /></a>
     </div>
-    <div class="links flex">
-      <a href="/about" class="navlink" aria-label="click to ckeck more about the company">Our Company</a>
-      <a href="/locations" class="navlink" aria-label="click to check the location">Locations</a>
-      <a href="/contact" class="navlink" aria-label="click for more contacts">Contact</a>
+    <div class="links flex navlinks">
+      <a href="/starter-code/about.html" class="navlink" aria-label="click to ckeck more about the company">Our Company</a>
+      <a href="/starter-code/locations.html" class="navlink" aria-label="click to check the location">Locations</a>
+      <a href="/starter-code/contact.html" class="navlink" aria-label="click for more contacts">Contact</a>
     </div>
+    <div class="menu">
+        <span class="material-icons menu-btn">menu</span>
+        <span class="material-icons close-btn">close</span>
+      </div>
   </nav> 
   </header>
   <!-- Main -->
@@ -122,21 +126,21 @@
         <h2>Let’s talk about your project</h2>
         <p>Ready to take it to the next level? Contact us today and find out how our expertise can help your business grow.</p>
       </div>
-      <button class="btn btn-dark">GET IN TOUCH</button>
+      <button class="btn btn-dark get_in_touch_btn"><a href="/starter-code/contact.html">GET IN TOUCH</a></button>
     </div>
     <div class="contact bg-black">
       <div class="footer-container">
         <div class="navbar nav-bottom flex">
-          <div class="logo">
+          <div class="logo logo-bottom">
             <img alt="logo" class="logo-img" src="./assets/shared/desktop/logo-light.png" />
           </div>
           <div class="links flex ">
-            <a href="/about" class="bottomlink" aria-label="click to ckeck more about the company">Our Company</a>
-            <a href="/locations" class="bottomlink" aria-label="click to check the location">Locations</a>
-            <a href="/contact" class="bottomlink" aria-label="click for more contacts">Contact</a>
+            <a href="/starter-code/about.html" class="bottomlink" aria-label="click to ckeck more about the company">Our Company</a>
+            <a href="/starter-code/locations.html" class="bottomlink" aria-label="click to check the location">Locations</a>
+            <a href="/starter-code/contact.html" class="bottomlink" aria-label="click for more contacts">Contact</a>
           </div>
         </div>
-        <hr />
+        <hr class="hr2"/>
         <div class="contact_details flex">
           <div class="address clr-light_grey">
             <p>Designo Central Office</p>
@@ -158,7 +162,8 @@
         </div>
       </div>
     </div>
-  </footer>  
+  </footer>
+  <script type="text/javascript" src="./app.js"></script>
   <!-- <img src="./assets/shared/desktop/bg-pattern-leaf.svg" alt="bg-pattern-leaf" class="bg-leaf-1" />
   <img src="./assets/shared/desktop/bg-pattern-leaf.svg" alt="bg-pattern-leaf-2" class="bg-leaf-2" /> -->
 </body>

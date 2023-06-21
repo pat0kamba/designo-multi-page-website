@@ -140,7 +140,7 @@
     .airfilter-img, .eyecam-img, .faceit-img, .todo-img, .loopstudios-img,
     .change-img, .boxed-water-img, .science-img
     {
-    height:auto;
+    height:100%;
     width:100%;
     }
 
@@ -156,6 +156,14 @@
         place-content:center;
 
         
+    }
+    @media only screen and (max-width:767px)
+    {
+        .express, .transfer, .photon, .builder, .blogr, .camp, .airfilter, .eyecam, .faceit, .todo,
+        .loopstudios, .change, .boxed-water, .science{
+        grid-template-columns:1fr;
+        
+    }
     }
    
 
